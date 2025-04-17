@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <title>বিষয়সমূহ</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h2>Edification</h2>
+    <form action="/search" method="GET">
+        <input type="text" name="query" placeholder="Search for questions... Edification" required>
+        <button type="submit">Search</button>
+    </form>
+  <h1>বিষয় নির্বাচন করুন</h1>
+  <div class="card-container">
+    {% for subject in subjects %}
+      <a class="card" href="{{ url_for('papers', subject=subject) }}">{{ subject }}</a>
+    {% endfor %}
+    <footer>
+        <p>&copy; 2025 All rights reserved. [TeslaTech]</p>
+    </footer>    
+  </div>
+</body>
+</html>

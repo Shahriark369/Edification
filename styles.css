@@ -1,0 +1,145 @@
+body {
+    margin: 2;
+    padding:2;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(-45deg, #1e3c72, #2a5298, #0f2027, #2c5364);
+    background-size: 500% 500%;
+    animation: gradient 15s ease infinite;
+    color: #fff;
+    text-align: center;
+}
+
+@keyframes gradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+    gap: 20px;
+    padding: 100px 20px 50px;
+}
+
+.card {
+    width: 150px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.card-container {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: #fff;
+}
+
+h1, h2 {
+    margin-top: 40px;
+    font-size: 32px;
+}
+
+iframe {
+    max-width: 95%;
+    height: 400px;
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    border: none;
+}
+
+.home-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #646160;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.home-button:hover {
+    background-color: #082b58;
+    transform: scale(1.1);
+}
+
+.home-button:active {
+    transform: scale(1);
+}
+
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+form input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: 2px solid #ccc;
+    margin-right: 10px;
+    width: 250px;
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: linear-gradient(45deg, #0b025e, #c0bcbb);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+form button:hover {
+    background: linear-gradient(45deg, #19065c, #a09c9c);
+    transform: scale(1.05);
+}
+
+form button:active {
+    transform: scale(1);
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 300;
+}

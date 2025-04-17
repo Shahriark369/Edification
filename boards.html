@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <title>বোর্ড নির্বাচন</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h2>Edification</h2>
+  <h1>{{ subject }} - {{ paper }} - বোর্ড নির্বাচন করুন</h1>
+  <div class="card-container">
+    {% for board in boards %}
+      <a class="card" href="{{ url_for('years', subject=subject, paper=paper, board=board) }}">{{ board }}</a>
+    {% endfor %}
+    <a href="{{ url_for('index') }}" class="home-button">Home</a>
+    <footer>
+        <p>&copy; 2025 All rights reserved. [TeslaTech]</p>
+    </footer>    
+  </div>
+</body>
+</html>
