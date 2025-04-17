@@ -16,7 +16,7 @@ body {
 }
 
 .card-container {
-    display: inline;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
@@ -35,7 +35,7 @@ body {
     border: 2px solid rgba(255, 255, 255, 0.3);
     border-radius: 15px;
     padding: 10px;
-    display: inline;
+    display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
