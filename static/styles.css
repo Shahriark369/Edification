@@ -15,14 +15,19 @@ body {
     100% {background-position: 0% 50%;}
 }
 
-.container {
+.card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start; 
-    gap: 20px;
-    padding: 100px 20px 50px;
+    justify-content: center;
+    gap: 15px;
 }
 
+@media (max-width: 600px) {
+    .card {
+        width: 45%; /* or 100% for full width on very small screens */
+        height: auto;
+    }
+}
 .card {
     width: 150px;
     height: 100px;
@@ -39,6 +44,7 @@ body {
     font-weight: bold;
     box-shadow: 0 4px 20px rgba(0,0,0,0.3);
     transition: transform 0.3s ease, background 0.3s ease;
+    flex: 0 1 auto;
 }
 
 .card-container {
