@@ -16,7 +16,7 @@ body {
 }
 
 .card-container {
-    display: flex;
+    display: inline;
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
